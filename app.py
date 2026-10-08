@@ -4,7 +4,7 @@ import streamlit as st
 from calculations import add_inflation, purchasing_power, real_income_change, period_inflation
 
 st.set_page_config(page_title='India Inflation Tracker', page_icon='🇮🇳', layout='wide')
-st.title('🇮🇳 India Inflation Tracker')
+st.title('India Inflation Tracker')
 st.warning('The bundled dataset is SYNTHETIC and is NOT official Indian CPI data. Upload an official monthly CPI-index CSV for real analysis.')
 st.caption('Upload monthly index levels with columns: Date, Headline, Food, Housing, Fuel. Use a consistent index base and definitions.')
 upload = st.file_uploader('Optional: upload monthly CPI index CSV', type='csv')
